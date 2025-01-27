@@ -2,7 +2,7 @@ BATCH_SIZE = 16
 DEFAULT_API = {
         "hostname": "http://localhost",
         "port": 3000,
-        "url": "gector",
+        "url": "components/model",
         "request_key": "text_input_list",
         "response_key": "text_output_list",
     }
