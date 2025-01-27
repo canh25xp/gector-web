@@ -1,15 +1,11 @@
 import asyncio
 from flask import Flask, render_template, request
-import requests
 import json
 import os
 import nltk
 import spacy
 import errant
 import httpx
-from errant.edit import Edit as ErrantEdit
-import subprocess
-from urllib.parse import quote
 from sacremoses import MosesDetokenizer
 
 import combinations.esc.run as esc
@@ -109,7 +105,6 @@ async def home():
                 e_ins.append(spacy_doc)
 
             output_dict = {}
-            edit_dict = {}
             async with httpx.AsyncClient() as session:  # async client used for async function
                 edit_out = (analyze and len(models) == 1) or (selected_combination == "ESC" and len(models) > 1)
                 tasks = [get_prediction(session, model, e_ins, texts, edit_out) for model in models]
