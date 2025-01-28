@@ -1,18 +1,17 @@
 import asyncio
-from flask import Flask, render_template, request
 import json
 from pathlib import Path
-import nltk
-import spacy
+
 import errant
 import httpx
+import nltk
+import spacy
+from flask import Flask, render_template, request
 from sacremoses import MosesDetokenizer
 
 import combinations.esc.run as esc
 import combinations.memt.run as memt
-
 import config
-
 
 FILE = Path(__file__).resolve()
 ROOT = FILE.parents[0]
