@@ -14,7 +14,7 @@ import combinations.memt.run as memt
 import config
 
 
-nltk.download("punkt_tab")
+# nltk.download("punkt_tab") # Only need to run once
 nlp = spacy.load("en_core_web_sm")
 annotator = errant.load("en", nlp)
 md = MosesDetokenizer(lang="en")
