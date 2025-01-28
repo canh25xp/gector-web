@@ -1,5 +1,11 @@
 # Gec-web: A Lightweight Language Error Correction System
 
+This project is using [Bootstrap](https://getbootstrap.com) version [5.2.3](https://getbootstrap.com/docs/5.2/getting-started/download/).
+Download it with 
+```
+curl -LO https://github.com/twbs/bootstrap/releases/download/v5.2.3/bootstrap-5.2.3-dist.zip
+7z x bootstrap-5.2.3-dist.zip -ostatic
+```
 
 ## Installation
 1. Clone the repository.
