@@ -10,7 +10,7 @@ def predict(data):
         exp_dir += '-1'
     if 'GECToR-XLNet' in data:
         exp_dir += '-2'
-    if 'T5-Large' in data:
+    if 'GECToR-Bert' in data:
         exp_dir += '-3'
 
     combination_path = join(dirname(__file__), exp_dir, '')

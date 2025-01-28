@@ -583,7 +583,7 @@ def predict(data, generate_text=True):
         exp_dir += '-1'
     if 'GECToR-XLNet' in data:
         exp_dir += '-2'
-    if 'T5-Large' in data:
+    if 'GECToR-Bert' in data:
         exp_dir += '-3'
 
     seed = 0
