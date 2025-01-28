@@ -1,7 +1,7 @@
 import asyncio
 from flask import Flask, render_template, request
 import json
-import os
+from pathlib import Path
 import nltk
 import spacy
 import errant
@@ -14,6 +14,9 @@ import combinations.memt.run as memt
 import config
 
 
+FILE = Path(__file__).resolve()
+ROOT = FILE.parents[0]
+
 # nltk.download("punkt_tab") # Only need to run once
 nlp = spacy.load("en_core_web_sm")
 annotator = errant.load("en", nlp)
@@ -23,8 +26,7 @@ app = Flask(__name__)
 
 selected_combination = config.selected_combination
 
-file_path = os.path.dirname(os.path.realpath(__file__))
-errant_path = os.path.join(file_path, "errant_verbose.json")
+errant_path = ROOT / "errant_verbose.json"
 
 with open(errant_path) as f:
     errant_verbose = json.load(f)
