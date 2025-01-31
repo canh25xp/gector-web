@@ -56,7 +56,7 @@
     "U:VERB:TENSE": 53
   },
   "hyp_list": [
-    "T5-Large.txt",
+    "GECToR-Bert.txt",
     "GECToR-Roberta.txt"
   ]
 }
