@@ -8,7 +8,7 @@ curl -LO https://github.com/twbs/bootstrap/releases/download/v5.2.3/bootstrap-5.
 7z x bootstrap-5.2.3-dist.zip -ostatic
 ```
 
-Tested with python 3.7, 3.8 and 3.9
+Tested with python 3.8 and 3.9
 
 ## Installation
 
@@ -18,7 +18,7 @@ Tested with python 3.7, 3.8 and 3.9
 git clone https://github.com/canh25xp/gector-web --depth 1
 ```
 
-2. Set up a virtual environment (>=Python 3.7).
+2. Set up a virtual environment (>=Python 3.8).
 
 ```sh
 # with conda
