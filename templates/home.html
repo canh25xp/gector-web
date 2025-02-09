@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -7,19 +7,19 @@
   <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" />
   <script src="{{url_for('static', filename='bootstrap/js/jquery-3.6.1.min.js')}}"></script>
   <script src="{{url_for('static', filename='bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:;">
+  <meta http-equiv="content-security-policy" content="default-src 'self'; img-src 'self' data: https:;">
 </head>
 
 <body>
   <div class="container d-grid gap-3">
     <nav class="navbar navbar-light bg-light border-bottom">
       <div class="container-fluid">
-        <a href="{{url_for('home')}}" class="navbar-brand">GECTOR-WEB</a>
+        <a href="{{url_for('home')}}" class="navbar-brand">GecWeb</a>
       </div>
     </nav>
 
     <div class="row px-3">
-      <form action="{{url_for('home')}}" method="POST">
+      <form action="{{url_for('home')}}" method="post">
         <div class="row d-grip gap-2">
           {% if alerts %}
           <div class="row">
@@ -78,11 +78,10 @@
             <div class="output-container border-top py-2">{{ output|safe }}</div>
             <br />
           </div>
-          <script src="{{url_for('static', filename='js/script.js')}}"></script>
         </div>
       </form>
     </div>
-  </div>
+  <script src="{{url_for('static', filename='js/script.js')}}"></script>
 </body>
 
 </html>
