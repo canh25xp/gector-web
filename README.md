@@ -8,7 +8,7 @@ curl -LO https://github.com/twbs/bootstrap/releases/download/v5.2.3/bootstrap-5.
 7z x bootstrap-5.2.3-dist.zip -ostatic
 ```
 
-Tested with python 3.8 and 3.9
+Tested with python 3.8, 3.9 and 3.10
 
 ## Installation
 
