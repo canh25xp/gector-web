@@ -22,7 +22,7 @@ git clone https://github.com/canh25xp/gector-web --depth 1
 
 ```sh
 # with conda
-conda create -n gector-web python=3.8
+conda create -n gector-web python=3.10
 conda activate gector-web
 # with venv
 python3 -m venv .venv
