@@ -214,10 +214,8 @@ async def home():
             print("[WARNING] the predicted sentence length ({}) is different from input ({})".format(len(final_outs), len(sentences)))
             str_out = " ".join(final_outs)
         str_out = "<p>" + str_out + "</p>"
-        return render_template(
-            "home.html", input=request.form["input"], output=str_out, analyze=analyze, combinations=config.combinations, selected_combination=selected_combination, models=models
-        )
-    else:
+        return render_template("home.html", input=request.form["input"], output=str_out, analyze=analyze, combinations=config.combinations, selected_combination=selected_combination, models=models)
+    else:  # request.method == "GET":
         return render_template("home.html", combinations=config.combinations, selected_combination="ESC")
 
 
