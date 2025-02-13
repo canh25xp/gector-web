@@ -209,7 +209,7 @@ async def home():
                     sent = md.detokenize(out.split(" "))
                     out = postprocess(sent)
                 out_lines[l_idx].append(out)
-            str_out = "\n".join([" ".join(l) for l in out_lines])
+            str_out = "\n".join([" ".join(line) for line in out_lines])
         else:
             print("[WARNING] the predicted sentence length ({}) is different from input ({})".format(len(final_outs), len(sentences)))
             str_out = " ".join(final_outs)
