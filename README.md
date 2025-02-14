@@ -42,7 +42,7 @@ python # start python interactive shell and type following:
 
 4. Modify the `application.secret_key` in `app.wsgi`.
 
-5. Run it with `python app.py`
+5. Run it with `python app.py`. Go to http://localhost:4000 to test the app
 
 6. Optionally, for installation of MEMT, clone the MEMT repository:
 
